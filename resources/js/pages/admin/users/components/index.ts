@@ -1,0 +1,6 @@
+export * from './FormBasicInformation'
+export * from './FormPersonalInformation'
+export * from './FormProfessionalInformation'
+export * from './FormPassword'
+export * from './SessionsManager'
+export * from './DeleteAccount'

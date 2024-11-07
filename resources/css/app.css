@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tiptap.ProseMirror.ProseMirror-focused {
+	outline: none;
+}
+
+.tiptap.ProseMirror {
+	flex: 1;
+	padding-inline: 2rem;
+
+	> * + * {
+		margin-top: 0.75em;
+	}
+
+	[data-id] {
+		border: 3px solid #0d0d0d;
+		border-radius: 0.5rem;
+		margin: 1rem 0;
+		position: relative;
+		margin-top: 1.5rem;
+		padding: 2rem 1rem 1rem;
+
+		&::before {
+			content: attr(data-id);
+			background-color: #0d0d0d;
+			font-size: 0.6rem;
+			letter-spacing: 1px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #fff;
+			position: absolute;
+			top: 0;
+			padding: 0.25rem 0.75rem;
+			border-radius: 0 0 0.5rem 0.5rem;
+		}
+	}
+
+	h2 {
+		font-size: 1.4rem;
+		font-weight: 700;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+
+	h4 {
+		font-size: 1rem;
+		font-weight: 700;
+	}
+}
